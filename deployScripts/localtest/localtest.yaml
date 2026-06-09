@@ -1,0 +1,66 @@
+opl_network:
+  party_index:
+    - "Org1"
+    - "Org2"
+    - "Org3"
+    - "Org4"
+  cdnt_nodes:  # Ensure this key matches the Go struct tag (cdnt_nodes)
+    - node_type: 0  # CDNT_TYPE
+      opl_addr: "127.0.0.1:20131"
+      api_addr: "127.0.0.1:30131"
+    - node_type: 0  # CDNT_TYPE
+      opl_addr: "127.0.0.1:20132"
+      api_addr: "127.0.0.1:30132"
+    - node_type: 0  # CDNT_TYPE
+      opl_addr: "127.0.0.1:20133"
+      api_addr: "127.0.0.1:30133"
+    - node_type: 0  # CDNT_TYPE
+      opl_addr: "127.0.0.1:20134"
+      api_addr: "127.0.0.1:30134"
+  shard_nos:
+    - 1
+    - 2
+#    - 3
+  shard_groups:  # This must be a list of lists of OPLNode objects
+    - # Shard 1
+      - node_type: 1  # WORKER_TYPE
+        opl_addr: "127.0.0.1:20231"
+        api_addr: "127.0.0.1:30231"
+      - node_type: 1  # WORKER_TYPE
+        opl_addr: "127.0.0.1:20232"
+        api_addr: "127.0.0.1:30232"
+      - node_type: 1  # WORKER_TYPE
+        opl_addr: "127.0.0.1:20233"
+        api_addr: "127.0.0.1:30233"
+      - node_type: 1  # WORKER_TYPE
+        opl_addr: "127.0.0.1:20234"
+        api_addr: "127.0.0.1:30234"
+    - # Shard 2
+      - node_type: 1  # WORKER_TYPE
+        opl_addr: "127.0.0.1:20331"
+        api_addr: "127.0.0.1:30331"
+      - node_type: 1  # WORKER_TYPE
+        opl_addr: "127.0.0.1:20332"
+        api_addr: "127.0.0.1:30332"
+      - node_type: 1  # WORKER_TYPE
+        opl_addr: "127.0.0.1:20333"
+        api_addr: "127.0.0.1:30333"
+      - node_type: 1  # WORKER_TYPE
+        opl_addr: "127.0.0.1:20334"
+        api_addr: "127.0.0.1:30334"
+#    - # Shard 3
+#      - node_type: 1  # WORKER_TYPE
+#        opl_addr: "127.0.0.1:20431"
+#        api_addr: "127.0.0.1:30431"
+#      - node_type: 1  # WORKER_TYPE
+#        opl_addr: "127.0.0.1:20432"
+#        api_addr: "127.0.0.1:30432"
+#      - node_type: 1  # WORKER_TYPE
+#        opl_addr: "127.0.0.1:20433"
+#        api_addr: "127.0.0.1:30433"
+#      - node_type: 1  # WORKER_TYPE
+#        opl_addr: "127.0.0.1:20434"
+#        api_addr: "127.0.0.1:30434"
+mem_db_mode: false
+dial_delay: 5
+bind_delay: 10

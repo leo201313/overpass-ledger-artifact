@@ -1,0 +1,22 @@
+# macOS and editor metadata
+.DS_Store
+.idea/
+.vscode/
+
+# Go build artifacts
+cdntClient
+tmClient
+workerClient
+expInitAgent
+*.test
+coverage.out
+
+# Generated experiment artifacts and local state
+/localtest/
+/generaltest/
+/expOPL/
+/entity/testDBs/db_*/
+
+# Runtime logs and local credentials
+*.log
+*.pem

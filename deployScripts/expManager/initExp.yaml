@@ -1,0 +1,19 @@
+# Describe the network
+entity_ip_list:
+  - "192.168.1.1"
+  - "192.168.1.2"
+  - "192.168.1.3"
+worker_group_number: 4
+opl_port: 20130
+api_port: 30130
+
+# Paths to create nodes
+coordinator_client_path: "./cdntClient"
+worker_client_path: "./workerClient"
+test_manager_client_path: "./tmClient"
+nodes_creat_path: "./auto"
+
+# For SCP and SSH use
+user_name: "ubuntu"
+home_path: "/home/ubuntu"
+pem_path: "./myKey.pem"
